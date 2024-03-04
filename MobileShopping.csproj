@@ -103,6 +103,7 @@
     <Content Include="img\vivo x50.jpg" />
     <Content Include="img\vivox50.jpg" />
     <Content Include="indexhome.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -141,6 +142,13 @@
     </Compile>
     <Compile Include="indexhome.aspx.designer.cs">
       <DependentUpon>indexhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
