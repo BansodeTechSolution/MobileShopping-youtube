@@ -10,10 +10,10 @@ namespace MobileShopping
             {
                 lblusername.Text = "";
                 lbllogin.Text = "Login";
-                lblChangePassword.Visible=false;
-                imgchangepassword.Visible=false;
+                lblChangePassword.Visible = false;
+                imgchangepassword.Visible = false;
                 lblForgotForgot.Visible = true;
-                imgforgotpassword.Visible=true;
+                imgforgotpassword.Visible = true;
             }
             else
             {
