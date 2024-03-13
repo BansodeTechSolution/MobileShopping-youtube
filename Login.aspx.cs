@@ -43,7 +43,7 @@ namespace MobileShopping
                     }
                     else
                     {
-                        lblerror.Text = "Something goes wrong.contact to admin";
+                        lblerror.Text = "UserName or Password is Wrong";
                     }
                 }
                 else
