@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="MobileShopping.AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Mobile Shopping Admin </title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(76,175,80,0.1);
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: rgba(76,175,80,0.4);
+                }
+
+        body {
+            background-image: url("img/lambo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div>
+            <div width="100%">
+                <ul>
+                    <li>
+                        <a href="indexAdminhome.aspx">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/img/HomePage.png" Width="100px" Height="50PX" />
+                            <br />
+                            <asp:Label ID="lblhome" runat="server" Text="Home"></asp:Label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="AddProduct.aspx">
+                             <asp:Image ID="Image2" runat="server" ImageUrl="~/img/product.png" Width="100px" Height="50PX" />
+                             <br />
+                              <asp:Label ID="lblProduct" runat="server" Text="Add Product"></asp:Label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="AddCategory.aspx">
+                            <asp:Image ID="Image3" runat="server" ImageUrl="~/img/addtocart.png" Width="100px" Height="50PX" />
+                             <br />
+                            <asp:Label ID="lblAddToCart" runat="server" Text="Add Category"></asp:Label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="ViewFeedBack.aspx">
+                             <asp:Image ID="Image4" runat="server" ImageUrl="~/img/feedback.png" Width="100px" Height="50PX" />
+                             <br />
+                            <asp:Label ID="lblFeedback" runat="server" Text="View FeedBack"></asp:Label>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="ViewOrder.aspx">
+                             <asp:Image ID="Imageorder" runat="server" ImageUrl="~/img/feedback.png" Width="100px" Height="50PX" />
+                             <br />
+                            <asp:Label ID="lblorder" runat="server" Text="View Order"></asp:Label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="changepassword.aspx">
+                            <asp:Image ID="imgchangepassword" runat="server" ImageUrl="~/img/fpass.png" Width="100px" Height="50PX" /> <br />
+                            <asp:Label ID="lblChangePassword" runat="server" Text="ChangePassword"></asp:Label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="forgotpassword.aspx">
+                            <asp:Image ID="imgforgotpassword" runat="server" ImageUrl="~/img/fpass.png" Width="100px" Height="50PX" /> <br />
+                            <asp:Label ID="lblForgotForgot" runat="server" Text="Forgot Password"></asp:Label>
+                        </a>
+                    </li>
+                    <li>
+                        <center>
+                            <img src="img/HomeLogo.png" alt="BANNER OF WEBSITE" width="400px" style="height: 100px;" />
+                        </center>
+                    </li>
+                   
+                    <li style="float: right">
+                        <a href="Login.aspx">
+                             <asp:Image ID="Image8" runat="server" ImageUrl="~/img/login.png" Width="100px" Height="50PX" /> <br />
+                            <asp:Label ID="lbllogin" runat="server" Text="Login"></asp:Label>
+                        </a>
+                    </li>
+                    <li style="float: right">
+                        <a>
+                            <asp:Label ID="lblusername" runat="server" Text=""></asp:Label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <h3><b><i>Copyright © 2023 -24   Online Mobile Shop Private Limited, India. All rights reserved.</i></b></h3>
+        </div>
+    </form>
+</body>
+</html>

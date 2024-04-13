@@ -67,6 +67,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddCategory.aspx" />
+    <Content Include="AddProduct.aspx" />
     <Content Include="AddToCart.aspx" />
     <Content Include="changepassword.aspx" />
     <Content Include="FeedBack.aspx" />
@@ -102,19 +104,42 @@
     <Content Include="img\sumsunggalaxy7.jpg" />
     <Content Include="img\vivo x50.jpg" />
     <Content Include="img\vivox50.jpg" />
+    <Content Include="indexAdminhome.aspx" />
     <Content Include="indexhome.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Product.aspx" />
     <Content Include="reg.aspx" />
+    <Content Include="ViewFeedBack.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCategory.aspx.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCategory.aspx.designer.cs">
+      <DependentUpon>AddCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AddToCart.aspx.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMasterPage.Master.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMasterPage.Master.designer.cs">
+      <DependentUpon>AdminMasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="changepassword.aspx.cs">
       <DependentUpon>changepassword.aspx</DependentUpon>
@@ -138,6 +163,13 @@
     </Compile>
     <Compile Include="forgotpassword.aspx.designer.cs">
       <DependentUpon>forgotpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="indexAdminhome.aspx.cs">
+      <DependentUpon>indexAdminhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="indexAdminhome.aspx.designer.cs">
+      <DependentUpon>indexAdminhome.aspx</DependentUpon>
     </Compile>
     <Compile Include="indexhome.aspx.cs">
       <DependentUpon>indexhome.aspx</DependentUpon>
@@ -175,9 +207,17 @@
     <Compile Include="userMasterpage.Master.designer.cs">
       <DependentUpon>userMasterpage.Master</DependentUpon>
     </Compile>
+    <Compile Include="ViewFeedBack.aspx.cs">
+      <DependentUpon>ViewFeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewFeedBack.aspx.designer.cs">
+      <DependentUpon>ViewFeedBack.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\LT E-Bill.pdf" />
+    <Content Include="AdminMasterPage.Master" />
     <None Include="packages.config" />
     <Content Include="userMasterpage.Master" />
     <None Include="Web.Debug.config">
