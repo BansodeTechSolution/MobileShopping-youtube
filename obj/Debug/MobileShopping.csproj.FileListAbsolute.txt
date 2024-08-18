@@ -54,6 +54,6 @@ C:\Users\ajayb\source\repos\MobileShopping\bin\Microsoft.CodeDom.Providers.DotNe
 C:\Users\ajayb\source\repos\MobileShopping\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\ajayb\source\repos\MobileShopping\obj\Debug\MobileShopping.csproj.AssemblyReference.cache
 C:\Users\ajayb\source\repos\MobileShopping\obj\Debug\MobileShopping.csproj.CoreCompileInputs.cache
-C:\Users\ajayb\source\repos\MobileShopping\obj\Debug\MobileShopping.csproj.CopyComplete
+C:\Users\ajayb\source\repos\MobileShopping\obj\Debug\MobileSh.BB443D0C.Up2Date
 C:\Users\ajayb\source\repos\MobileShopping\obj\Debug\MobileShopping.dll
 C:\Users\ajayb\source\repos\MobileShopping\obj\Debug\MobileShopping.pdb
