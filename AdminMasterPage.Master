@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMasterPage.master.cs" Inherits="MobileShopping.AdminMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: White;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: #111;
+                }
+
+        body {
+            background-image: url("partyKit.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table width="100%">
+                <tr align="center">
+                    <td>
+                        <ul>
+                            <li><a href="index2.aspx">
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/img/HomePage.png" Width="100px" Height="50PX" /><br />
+                                <asp:Label ID="Label6" runat="server" Text="HOME"></asp:Label></a></li>
+                            <li><a href="addproduct.aspx">
+                                <asp:Image ID="Image2" runat="server" ImageUrl="~/img/product.png" Width="100px" Height="50PX" /><br />
+                                <asp:Label ID="Label7" runat="server" Text="ADD PRODUCT"></asp:Label></a></li>
+                            <li><a href="addcategory.aspx">
+                                <asp:Image ID="Image3" runat="server" ImageUrl="~/img/addtocart.png" Width="100px" Height="50PX" /><br />
+                                <asp:Label ID="Label8" runat="server" Text="ADD CATEGORY"></asp:Label></a></li>
+                            <li><a href="viewfeedback.aspx">
+                                <asp:Image ID="Image4" runat="server" ImageUrl="~/img/feedback.png" Width="100px" Height="50PX" /><br />
+                                <asp:Label ID="Label9" runat="server" Text="VIEW FEEDBACK"></asp:Label></a></li>
+                            <li><a href="vieworder.aspx">
+                                <asp:Image ID="Image6" runat="server" ImageUrl="~/img/fpass.png" Width="100px" Height="50PX" /><br />
+                                <asp:Label ID="Label11" runat="server" Text="VIEW ORDER"></asp:Label></a></li>
+                            <li>
+                                <img src="img/HomeLogo.png" alt="BANNER OF WEBSITE" width="100px" style="height: 100px;" /></li>
+                            <li style="float: right"><a href="login.aspx">
+                                <asp:Image ID="Image8" runat="server" ImageUrl="~/img/login.png" Width="100px" Height="50PX" /><br />
+                                <asp:Label ID="Label13" runat="server" Text="LOGIN"></asp:Label></a></li>
+                            <li style="float: right"><a>
+                                <asp:Label ID="Label14" runat="server" Text=""></asp:Label></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <h3><b><i>Copyright © 2023 -24   Online Mobile Shop Private Limited, India. All rights reserved.</i></b></h3>
+        </div>
+    </form>
+</body>
+</html>
